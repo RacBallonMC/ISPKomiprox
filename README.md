@@ -2,11 +2,11 @@
  **Home ISP**
 | Name | ISP using proxy | Blocked ping | Blocked traceroute |
 | :---: | :---: | :---: | :---: |
-| IndiHome | None | No | Yes |
+| IndiHome | No | No | Yes |
 | CBN | Untested | No | Untested |
 | Biznet Home | Untested | No | Untested |
 | MyRepublic | Untested | No | No |
-| FirstMedia | None | No | No |
+| FirstMedia | No | No | No |
 | Megavision | Untested | Untested | Untested |
 | MNC | Untested | No | No |
 | ICON+ | Untested | No | Untested |
@@ -36,11 +36,11 @@
 **Mobile ISP**
 | Name | ISP using proxy | Blocked ping | Blocked traceroute |
 | :---: | :---: | :---: | :---: |
-| Telkomsel | DPI proxy | No | Yes |
-| XL, Live.On and Axis | None | Yes | No |
+| Telkomsel | Yes. DPI proxy like Iran/China | No | Yes |
+| XL, Live.On and Axis | No | Yes | No |
 | 3 | Untested | Untested | Untested |
 | Indosat | Untested | Untested | Untested |
-| Smartfren | None | No | No |
+| Smartfren | No | No | No |
 
 ### How to test
 
