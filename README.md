@@ -53,19 +53,51 @@ Ubuntu/Debian:
 - sudo apt install -y curl
 
 Cloudflare web allowed 80 and 443 port
-- curl -v --trace-time -m 31 --connect-to ::www.cloudflare.com:25565 https://www.google.com
-- curl -v --trace-time -m 31 --connect-to ::www.cloudflare.com:45384 https://www.google.com
-- curl -v --trace-time -m 31 --connect-to ::www.cloudflare.com:23389 https://www.google.com
-- curl -v --trace-time -m 31 --connect-to ::www.cloudflare.com:55335 https://www.google.com
-- curl -v --trace-time -m 31 --connect-to ::www.cloudflare.com:10352 https://www.google.com
-- curl -v --trace-time -m 31 --connect-to ::www.cloudflare.com:7352 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:25565 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:45384 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:23389 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:55335 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:10352 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:7352 https://www.google.com
 
 35.24.5.6 and 201.251.64.34 not http server
-- curl -v --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:443 https://www.google.com
-- curl -v --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:80 http://www.google.com
-- curl -v --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:443 https://www.google.com
-- curl -v --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:80 http://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:443 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:80 http://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:443 https://www.google.com
+- curl -v --connect-timeout 20 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:80 http://www.google.com
 
+-----------------------------------------
+
+Running
+$ curl -v --connect-timeout 20 -A "Mozilla/5.0" --connect-to ::35.24.5.6:80 http://www.google.com
+
+Not detected
+
+Tested on Smartfren, IndiHome, First Media, and XL
+```
+* Connecting to hostname: 35.24.5.6
+* Connecting to port: 80
+*   Trying 35.24.5.6:80...
+* Connection timeout after 20000 ms
+* Closing connection 0
+curl: (28) Connection timeout after 20000 ms
+```
+Detected
+
+Tested on Telkomsel
+```
+* Connecting to hostname: 35.24.5.6
+* Connecting to port: 80
+*   Trying 35.24.5.6:80...
+* Connected to 35.24.5.6 (35.24.5.6) port 80 (#0)
+> GET / HTTP/1.1
+> Host: www.google.com
+> User-Agent: Mozilla/5.0
+> Accept: */*
+>
+...
+```
+-----------------------------------------
 **Check traceroute blocking**
 
 Liunx:
