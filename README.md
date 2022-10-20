@@ -33,6 +33,7 @@
 | PT Cipta Informatika Cemeriang | Untested | Untested | Untested | Unknown |
 | PT Lexa Net | Untested | Untested | Untested | Unknown |
 | GMEDIA | Untested | Untested | Untested | Unknown |
+| PT DES Teknologi Informasi | Untested | Untested | Untested | Unknown |
 
 **Mobile ISP**
 | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle |
