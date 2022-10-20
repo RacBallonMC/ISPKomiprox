@@ -1,3 +1,4 @@
+ # ISPKomiprox
  ### ISP
  **Home ISP**
 | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle |
@@ -49,8 +50,8 @@
 You need to install curl
 
 Ubuntu/Debian:
-- sudo apt update
-- sudo apt install -y curl
+- sudo apt-get update
+- sudo apt-get install -y curl
 
 Cloudflare web allowed 80 and 443 port
 - curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:25565 https://www.google.com
