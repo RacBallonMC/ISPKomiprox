@@ -1,48 +1,48 @@
  # ISPKomiprox
  ### ISP
  **Home ISP**
-| Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle |
-| :---: | :---: | :---: | :---: | :---: |
-| IndiHome | No | No | Yes | Unknown |
-| CBN | Untested | No | Untested | Unknown |
-| Biznet Home | Untested | No | Untested | Unknown |
-| MyRepublic | Untested | No | No | Unknown |
-| FirstMedia | No | No | No | Unknown |
-| Megavision | Untested | Untested | Untested | Unknown |
-| MNC | Untested | No | No | Unknown |
-| ICON+ | Untested | No | Untested | Unknown |
-| PT Netciti Persada | Untested | Untested | Untested | Unknown |
-| Moratelindo | Untested | Untested | Untested | Unknown |
-| Citranet | Untested | Untested | Untested | Unknown |
-| Padi Net | Untested | Untested | Untested | Unknown |
-| Fiberstream | Untested | Untested | Untested | Unknown |
+| ASN | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle | Supported IPv6 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| AS7713 | IndiHome | No | No | Yes | Unknown | Yes |
+| AS4787 | CBN | Untested | No | Untested | Unknown | Unknown |
+| AS17451 | Biznet Home | Untested | No | Untested | Unknown | Yes |
+| AS63859 | MyRepublic | Untested | No | No | Unknown | Unknown |
+| AS23700 | First Media | No | No | No | Unknown | Unknown |
+| AS55699 | Megavision | Untested | Untested | Untested | Unknown | Unknown |
+| AS17670 | MNC Play | Untested | No | No | Unknown | Unknown |
+| AS9341 | ICON+ | Untested | No | Untested | Unknown | Unknown |
+| AS132641 | PT Netciti Persada | Untested | Untested | Untested | Unknown | Unknown |
+| AS23947 | Moratelindo | Untested | Untested | Untested | Unknown | Unknown |
+| AS23951 | Citranet | Untested | Untested | Untested | Unknown | Unknown |
+| AS23756 | Padi Net | Untested | Untested | Untested | Unknown | Unknown |
+| ? | Fiberstream | Untested | Untested | Untested | Unknown | Unknown |
 
 **Office ISP**
-| Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle |
-| :---: | :---: | :---: | :---: | :---: |
-| Astinet | Untested | Untested | Untested | Unknown |
-| Lintasarta | Untested | Untested | Untested | Unknown |
-| Metronet | Untested | Untested | Untested | Unknown |
-| PT Metrasat | Untested | Untested | Untested | Unknown |
-| PT Pasifik Satelit Nusantara | Untested | Untested | Untested | Unknown |
-| PT Artha Telekomindo | Untested | Untested | Untested | Unknown |
-| PT Hawk Teknologi Solusi | Untested | Untested | Untested | Unknown |
-| PT Jaringanku Sarana Nusantara | Untested | Untested | Untested | Unknown |
-| PT Remala Abadi | Untested | Untested | Untested | Unknown |
-| PT iForte Global internet | Untested | Untested | Untested | Unknown |
-| PT Cipta Informatika Cemeriang | Untested | Untested | Untested | Unknown |
-| PT Lexa Net | Untested | Untested | Untested | Unknown |
-| GMEDIA | Untested | Untested | Untested | Unknown |
-| PT DES Teknologi Informasi | Untested | Untested | Untested | Unknown |
+| ASN | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle | Supported IPv6 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ? | Astinet | Untested | Untested | Untested | Unknown | Unknown |
+| ? | Lintasarta | Untested | Untested | Untested | Unknown | Unknown |
+| ? | Metronet | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Metrasat | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Pasifik Satelit Nusantara | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Artha Telekomindo | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Hawk Teknologi Solusi | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Jaringanku Sarana Nusantara | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Remala Abadi | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT iForte Global internet | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Cipta Informatika Cemeriang | Untested | Untested | Untested | Unknown | Unknown |
+| ? | PT Lexa Net | Untested | Untested | Untested | Unknown | Unknown |
+| AS55666 | GMEDIA | Untested | Untested | Untested | Unknown | Unknown |
+| AS45302 | PT DES Teknologi Informasi | Untested | Untested | Untested | Unknown | Unknown |
 
 **Mobile ISP**
-| Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle |
-| :---: | :---: | :---: | :---: | :---: |
-| Telkomsel and by.U | Yes. DPI proxy like Iran/China | No | Yes | Yes. caused by DPI proxy |
-| XL, Live.On and Axis | No | Yes | No | No |
-| 3 | Untested | Untested | Untested | Unknown |
-| Indosat | Untested | Untested | Untested | Unknown |
-| Smartfren | No | No | No | Yes |
+| ASN | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle | Supported IPv6 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| AS23693 | Telkomsel and by.U | Yes. DPI proxy like Iran/China | No | Yes | Yes. caused by DPI proxy | Yes |
+| AS24203 | XL, Live.On and Axis | No | Yes | No | No | No |
+| AS45727 | 3 (Tri) | Untested | Untested | Untested | Unknown | No |
+| AS4761 | Indosat | Untested | Untested | Untested | Unknown | No |
+| AS18004 | Smartfren | No | No | No | Yes | No |
 
 ### How to test
 
@@ -53,6 +53,11 @@ You need to install curl
 Ubuntu/Debian:
 - sudo apt-get update
 - sudo apt-get install -y curl
+
+or
+
+- sudo apt update
+- sudo apt install -y curl
 
 Cloudflare web allowed 80 and 443 port
 - curl -v --connect-timeout 20 --trace-time -m 31 --connect-to ::api.cloudflare.com:25565 https://www.google.com
@@ -97,7 +102,9 @@ Tested on Telkomsel
 > User-Agent: Mozilla/5.0
 > Accept: */*
 >
-...
+* Operation timed out after 31001 milliseconds with 0 bytes received
+* Closing connection 0
+curl: (28) Operation timed out after 31001 milliseconds with 0 bytes received
 ```
 -----------------------------------------
 **Check traceroute blocking**
