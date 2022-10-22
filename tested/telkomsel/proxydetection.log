@@ -1,0 +1,144 @@
+
+C:\Users\User\Documents>proxy_detection.bat
+
+Checking ISP's proxy system
+
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:25565 https://www.google.com
+17:18:21.729353 * Connecting to hostname: api.cloudflare.com
+17:18:21.733923 * Connecting to port: 25565
+17:18:22.322048 *   Trying 104.19.193.29:25565...
+17:18:22.372696 * Connected to api.cloudflare.com (104.19.193.29) port 25565 (#0)
+17:18:22.377865 * ALPN: offers h2
+17:18:22.379118 * ALPN: offers http/1.1
+17:18:22.807429 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:18:22.809180 *  CApath: none
+17:18:22.810415 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:18:22.811828 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:18:31.728827 * SSL connection timeout
+17:18:31.730484 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:45384 https://www.google.com
+17:18:31.748356 * Connecting to hostname: api.cloudflare.com
+17:18:31.750744 * Connecting to port: 45384
+17:18:31.757188 *   Trying 104.19.193.29:45384...
+17:18:31.822841 * Connected to api.cloudflare.com (104.19.193.29) port 45384 (#0)
+17:18:31.827996 * ALPN: offers h2
+17:18:31.829208 * ALPN: offers http/1.1
+17:18:32.159293 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:18:32.161025 *  CApath: none
+17:18:32.162219 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:18:32.163743 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:18:41.748981 * SSL connection timeout
+17:18:41.751016 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:23389 https://www.google.com
+17:18:41.775925 * Connecting to hostname: api.cloudflare.com
+17:18:41.781336 * Connecting to port: 23389
+17:18:41.790064 *   Trying 104.19.193.29:23389...
+17:18:41.824315 * Connected to api.cloudflare.com (104.19.193.29) port 23389 (#0)
+17:18:41.828717 * ALPN: offers h2
+17:18:41.829766 * ALPN: offers http/1.1
+17:18:42.161668 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:18:42.164491 *  CApath: none
+17:18:42.166527 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:18:42.169802 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:18:51.776902 * SSL connection timeout
+17:18:51.779169 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:55335 https://www.google.com
+17:18:51.799793 * Connecting to hostname: api.cloudflare.com
+17:18:51.803561 * Connecting to port: 55335
+17:18:51.809382 *   Trying 104.19.193.29:55335...
+17:18:51.842123 * Connected to api.cloudflare.com (104.19.193.29) port 55335 (#0)
+17:18:51.847668 * ALPN: offers h2
+17:18:51.849366 * ALPN: offers http/1.1
+17:18:52.185923 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:18:52.187804 *  CApath: none
+17:18:52.190094 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:18:52.191796 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:19:01.800653 * SSL connection timeout
+17:19:01.802874 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:10352 https://www.google.com
+17:19:02.821994 * Connecting to hostname: api.cloudflare.com
+17:19:02.825752 * Connecting to port: 10352
+17:19:02.832342 *   Trying 104.19.193.29:10352...
+17:19:02.867649 * Connected to api.cloudflare.com (104.19.193.29) port 10352 (#0)
+17:19:02.876479 * ALPN: offers h2
+17:19:02.879603 * ALPN: offers http/1.1
+17:19:03.213598 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:19:03.216145 *  CApath: none
+17:19:03.217606 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:19:03.219425 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:19:12.822433 * SSL connection timeout
+17:19:12.824411 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:7352 https://www.google.com
+17:19:12.844957 * Connecting to hostname: api.cloudflare.com
+17:19:12.848295 * Connecting to port: 7352
+17:19:12.855556 *   Trying 104.19.193.29:7352...
+17:19:12.927390 * Connected to api.cloudflare.com (104.19.193.29) port 7352 (#0)
+17:19:12.933533 * ALPN: offers h2
+17:19:12.934820 * ALPN: offers http/1.1
+17:19:13.265469 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:19:13.267501 *  CApath: none
+17:19:13.268932 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:19:13.270471 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:19:22.847532 * SSL connection timeout
+17:19:22.850387 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:443 https://www.google.com
+17:19:22.875120 * Connecting to hostname: 35.24.5.6
+17:19:22.878876 * Connecting to port: 443
+17:19:22.882985 *   Trying 35.24.5.6:443...
+17:19:22.957798 * Connected to 35.24.5.6 (35.24.5.6) port 443 (#0)
+17:19:22.964806 * ALPN: offers h2
+17:19:22.969240 * ALPN: offers http/1.1
+17:19:23.303699 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:19:23.306357 *  CApath: none
+17:19:23.308179 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:19:23.309852 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:19:32.875295 * SSL connection timeout
+17:19:32.877412 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:80 http://www.google.com
+17:19:32.898943 * Connecting to hostname: 35.24.5.6
+17:19:32.902099 * Connecting to port: 80
+17:19:32.905469 *   Trying 35.24.5.6:80...
+17:19:32.942785 * Connected to 35.24.5.6 (35.24.5.6) port 80 (#0)
+17:19:32.945562 > GET / HTTP/1.1
+17:19:32.945562 > Host: www.google.com
+17:19:32.945562 > User-Agent: Mozilla/5.0
+17:19:32.945562 > Accept: */*
+17:19:32.945562 >
+17:20:03.900405 * Operation timed out after 31001 milliseconds with 0 bytes received
+17:20:03.903857 * Closing connection 0
+curl: (28) Operation timed out after 31001 milliseconds with 0 bytes received
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:443 https://www.google.com
+17:20:03.934724 * Connecting to hostname: 201.251.64.34
+17:20:03.938160 * Connecting to port: 443
+17:20:03.939862 *   Trying 201.251.64.34:443...
+17:20:03.961043 * Connected to 201.251.64.34 (201.251.64.34) port 443 (#0)
+17:20:03.969760 * ALPN: offers h2
+17:20:03.972386 * ALPN: offers http/1.1
+17:20:04.307112 *  CAfile: C:\Windows\system32\curl-ca-bundle.crt
+17:20:04.309480 *  CApath: none
+17:20:04.311071 * TLSv1.0 (OUT), TLS header, Certificate Status (22):
+17:20:04.313469 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+17:20:13.934306 * SSL connection timeout
+17:20:13.937257 * Closing connection 0
+curl: (28) SSL connection timeout
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:80 http://www.google.com
+17:20:13.970192 * Connecting to hostname: 201.251.64.34
+17:20:13.974482 * Connecting to port: 80
+17:20:13.976761 *   Trying 201.251.64.34:80...
+17:20:14.029919 * Connected to 201.251.64.34 (201.251.64.34) port 80 (#0)
+17:20:14.034198 > GET / HTTP/1.1
+17:20:14.034198 > Host: www.google.com
+17:20:14.034198 > User-Agent: Mozilla/5.0
+17:20:14.034198 > Accept: */*
+17:20:14.034198 >
+17:20:44.971215 * Operation timed out after 31001 milliseconds with 0 bytes received
+17:20:44.974109 * Closing connection 0
+curl: (28) Operation timed out after 31001 milliseconds with 0 bytes received
+Press any key to continue . . .
