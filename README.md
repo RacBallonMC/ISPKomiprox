@@ -10,7 +10,7 @@
 | AS23700 | First Media | No | No | No | Unknown | Unknown |
 | AS55699 | Megavision | Untested | Untested | Untested | Unknown | Unknown |
 | AS17670 | MNC Play | Untested | No | No | Unknown | Unknown |
-| AS9341 | ICON+ | Untested | No | Untested | Unknown | Unknown |
+| AS9341 | ICON+/Iconnet PLN | Untested | No | Untested | Unknown | Unknown |
 | AS132641 | PT Netciti Persada | Untested | Untested | Untested | Unknown | Unknown |
 | AS23947 | Moratelindo | Untested | Untested | Untested | Unknown | Unknown |
 | AS23951 | Citranet | Untested | Untested | Untested | Unknown | Unknown |
