@@ -6,14 +6,14 @@
 | AS7713 | IndiHome | No | No | Yes | Unknown | Yes |
 | AS4787 | CBN | Untested | No | Untested | Unknown | Unknown |
 | AS17451 | Biznet Home | Untested | No | Untested | Unknown | Yes |
-| AS63859 | MyRepublic | Untested | No | No | Unknown | Unknown |
-| AS23700 | First Media | No | No | No | Unknown | Unknown |
-| AS55699 | Megavision | Untested | Untested | Untested | Unknown | Unknown |
-| AS17670 | MNC Play | Untested | No | No | Unknown | Unknown |
-| AS9341 | ICON+ (Iconnet PLN)| Untested | No | Untested | Unknown | Unknown |
-| AS23947 | Moratelindo (Oxygen) | Untested | Untested | Untested | Unknown | Unknown |
+| AS63859 | MyRepublic | Untested | No | No | Unknown | No |
+| AS23700 | First Media | No | No | No | Unknown | No |
+| AS55699 | Megavision | Untested | Untested | Untested | Unknown | No |
+| AS17670 | MNC Play | Untested | No | No | Unknown | No |
+| AS9341 | ICON+ (Iconnet PLN) | Untested | No | Untested | Unknown | No |
+| AS131111 | Moratelindo (Oxygen) | Untested | Untested | Untested | Unknown | Unknown |
 | AS23951 | Citranet | Untested | Untested | Untested | Unknown | Unknown |
-| AS23756 | Padi Net | Untested | Untested | Untested | Unknown | Unknown |
+| AS23756 | Padi Net | Untested | Untested | Untested | Unknown | No |
 | ? | Fiberstream | Untested | Untested | Untested | Unknown | Unknown |
 
 **Office ISP**
@@ -26,7 +26,7 @@
 | ? | PT Metrasat | Untested | Untested | Untested | Unknown | Unknown |
 | ? | PT Pasifik Satelit Nusantara | Untested | Untested | Untested | Unknown | Unknown |
 | ? | PT Artha Telekomindo | Untested | Untested | Untested | Unknown | Unknown |
-| AS132641 | PT Netciti Persada | Untested | Untested | Untested | Unknown | Unknown |
+| AS132641 | PT Netciti Persada | Untested | Untested | Untested | Unknown | No |
 | ? | PT Hawk Teknologi Solusi | Untested | Untested | Untested | Unknown | Unknown |
 | ? | PT Jaringanku Sarana Nusantara | Untested | Untested | Untested | Unknown | Unknown |
 | ? | PT Remala Abadi | Untested | Untested | Untested | Unknown | Unknown |
@@ -34,8 +34,8 @@
 | ? | PT Cipta Informatika Cemeriang | Untested | Untested | Untested | Unknown | Unknown |
 | ? | PT Lexa Net | Untested | Untested | Untested | Unknown | Unknown |
 | ? | PT Artorius Telemetri Sentosa | Untested | Untested | Untested | Unknown | Unknown |
-| AS55666 | G-MEDIA | Untested | Untested | Untested | Unknown | Unknown |
-| AS45302 | D-NET (PT. Core Mediatech) | Untested | Untested | Untested | Unknown | Unknown |
+| AS55666 | G-MEDIA | Untested | Untested | Untested | Unknown | Yes |
+| AS45302 | D-NET (PT. Core Mediatech) | Untested | Untested | Untested | Unknown | No |
 
 **Mobile ISP**
 | ASN | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle | Supported IPv6 |
@@ -80,7 +80,7 @@ Cloudflare web allowed 80 and 443 port
 Running
 $ curl -v --connect-timeout 20 -A "Mozilla/5.0" --connect-to ::35.24.5.6:80 http://www.google.com
 
-Not detected
+Undetected
 
 Tested on Smartfren, IndiHome, First Media, and XL
 ```
