@@ -36,12 +36,14 @@
 | ? | PT Artorius Telemetri Sentosa | Untested | Untested | Untested | Unknown | Unknown |
 | AS55666 | G-MEDIA | Untested | Untested | Untested | Unknown | Yes |
 | AS45302 | D-NET (PT. Core Mediatech) | Untested | Untested | Untested | Unknown | No |
+| ? | PT Sumber Koneksi Indotelematika | Untested | Untested | Untested | Unknown | Unknown |
+| AS141049 | ProNET | Untested | Untested | Untested | Unknown | Unknown |
 
 **Mobile ISP**
 | ASN | Name | ISP using proxy | Blocked ping | Blocked traceroute | Throttle | Supported IPv6 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | AS23693 | Telkomsel and by.U | Yes. DPI proxy like Iran/China | No | Yes | Yes. caused by DPI proxy | Yes |
-| AS24203 | XL, Live.On and Axis | No | Yes | No | No | No |
+| AS24203 | XL, Live.On and Axis | No | No | No | No | No |
 | AS45727 | 3 (Tri) | Untested | Untested | Untested | Unknown | No |
 | AS4761 | Indosat | Untested | Untested | Untested | Unknown | No |
 | AS18004 | Smartfren | No | No | No | Yes | No |
