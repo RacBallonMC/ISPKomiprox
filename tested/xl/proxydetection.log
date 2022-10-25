@@ -1,0 +1,106 @@
+
+C:\Users\User\Documents>proxy_detection.bat
+
+Checking ISP's proxy system
+
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:25565 https://www.google.com
+21:10:08.083349 * Connecting to hostname: api.cloudflare.com
+21:10:08.085353 * Connecting to port: 25565
+21:10:08.817069 *   Trying 104.19.192.29:25565...
+21:10:13.451614 * After 4633ms connect time, move on!
+21:10:13.453118 * connect to 104.19.192.29 port 25565 failed: Timed out
+21:10:13.455082 *   Trying 104.19.193.29:25565...
+21:10:15.773350 * After 2316ms connect time, move on!
+21:10:15.775488 * connect to 104.19.193.29 port 25565 failed: Timed out
+21:10:15.777160 * Failed to connect to api.cloudflare.com port 25565 after 7690 ms: Timed out
+21:10:15.779041 * Closing connection 0
+curl: (28) Failed to connect to api.cloudflare.com port 25565 after 7690 ms: Timed out
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:45384 https://www.google.com
+21:10:15.803660 * Connecting to hostname: api.cloudflare.com
+21:10:15.805729 * Connecting to port: 45384
+21:10:15.816386 *   Trying 104.19.192.29:45384...
+21:10:20.813515 * After 4994ms connect time, move on!
+21:10:20.815472 * connect to 104.19.192.29 port 45384 failed: Timed out
+21:10:20.817634 *   Trying 104.19.193.29:45384...
+21:10:23.315613 * After 2495ms connect time, move on!
+21:10:23.318671 * connect to 104.19.193.29 port 45384 failed: Timed out
+21:10:23.321701 * Failed to connect to api.cloudflare.com port 45384 after 7512 ms: Timed out
+21:10:23.328722 * Closing connection 0
+curl: (28) Failed to connect to api.cloudflare.com port 45384 after 7512 ms: Timed out
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:23389 https://www.google.com
+21:10:23.362379 * Connecting to hostname: api.cloudflare.com
+21:10:23.366060 * Connecting to port: 23389
+21:10:23.371603 *   Trying 104.19.192.29:23389...
+21:10:28.370268 * After 4995ms connect time, move on!
+21:10:28.371907 * connect to 104.19.192.29 port 23389 failed: Timed out
+21:10:28.373641 *   Trying 104.19.193.29:23389...
+21:10:30.871368 * After 2496ms connect time, move on!
+21:10:30.874622 * connect to 104.19.193.29 port 23389 failed: Timed out
+21:10:30.877001 * Failed to connect to api.cloudflare.com port 23389 after 7509 ms: Timed out
+21:10:30.879694 * Closing connection 0
+curl: (28) Failed to connect to api.cloudflare.com port 23389 after 7509 ms: Timed out
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:55335 https://www.google.com
+21:10:31.909334 * Connecting to hostname: api.cloudflare.com
+21:10:31.912380 * Connecting to port: 55335
+21:10:31.919507 *   Trying 104.19.192.29:55335...
+21:10:36.916819 * After 4995ms connect time, move on!
+21:10:36.918929 * connect to 104.19.192.29 port 55335 failed: Timed out
+21:10:36.921128 *   Trying 104.19.193.29:55335...
+21:10:39.419865 * After 2496ms connect time, move on!
+21:10:39.423250 * connect to 104.19.193.29 port 55335 failed: Timed out
+21:10:39.428871 * Failed to connect to api.cloudflare.com port 55335 after 7511 ms: Timed out
+21:10:39.432906 * Closing connection 0
+curl: (28) Failed to connect to api.cloudflare.com port 55335 after 7511 ms: Timed out
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:10352 https://www.google.com
+21:10:38.457665 * Connecting to hostname: api.cloudflare.com
+21:10:38.461855 * Connecting to port: 10352
+21:10:38.468601 *   Trying 104.19.192.29:10352...
+21:10:43.465793 * After 4995ms connect time, move on!
+21:10:43.468012 * connect to 104.19.192.29 port 10352 failed: Timed out
+21:10:43.472427 *   Trying 104.19.193.29:10352...
+21:10:45.973600 * After 2496ms connect time, move on!
+21:10:45.976397 * connect to 104.19.193.29 port 10352 failed: Timed out
+21:10:45.978505 * Failed to connect to api.cloudflare.com port 10352 after 7515 ms: Timed out
+21:10:45.980624 * Closing connection 0
+curl: (28) Failed to connect to api.cloudflare.com port 10352 after 7515 ms: Timed out
+$ curl -v --connect-timeout 10 --trace-time -m 31 --connect-to ::api.cloudflare.com:7352 https://www.google.com
+21:10:46.002846 * Connecting to hostname: api.cloudflare.com
+21:10:46.007701 * Connecting to port: 7352
+21:10:46.013755 *   Trying 104.19.192.29:7352...
+21:10:51.011969 * After 4995ms connect time, move on!
+21:10:51.014668 * connect to 104.19.192.29 port 7352 failed: Timed out
+21:10:51.017079 *   Trying 104.19.193.29:7352...
+21:10:53.514210 * After 2495ms connect time, move on!
+21:10:53.516723 * connect to 104.19.193.29 port 7352 failed: Timed out
+21:10:53.519428 * Failed to connect to api.cloudflare.com port 7352 after 7511 ms: Timed out
+21:10:53.522339 * Closing connection 0
+curl: (28) Failed to connect to api.cloudflare.com port 7352 after 7511 ms: Timed out
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:443 https://www.google.com
+21:10:53.546625 * Connecting to hostname: 35.24.5.6
+21:10:53.549258 * Connecting to port: 443
+21:10:53.551823 *   Trying 35.24.5.6:443...
+21:11:03.547551 * Connection timeout after 10000 ms
+21:11:03.549357 * Closing connection 0
+curl: (28) Connection timeout after 10000 ms
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::35.24.5.6:80 http://www.google.com
+21:11:03.572128 * Connecting to hostname: 35.24.5.6
+21:11:03.574494 * Connecting to port: 80
+21:11:03.577183 *   Trying 35.24.5.6:80...
+21:11:13.573022 * Connection timeout after 10000 ms
+21:11:13.574645 * Closing connection 0
+curl: (28) Connection timeout after 10000 ms
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:443 https://www.google.com
+21:11:13.596722 * Connecting to hostname: 201.251.64.34
+21:11:13.599787 * Connecting to port: 443
+21:11:13.601990 *   Trying 201.251.64.34:443...
+21:11:23.597138 * Connection timeout after 10000 ms
+21:11:23.600812 * Closing connection 0
+curl: (28) Connection timeout after 10000 ms
+$ curl -v --connect-timeout 10 --trace-time -m 31 -A "Mozilla/5.0" --connect-to ::201.251.64.34:80 http://www.google.com
+21:11:23.621114 * Connecting to hostname: 201.251.64.34
+21:11:23.624316 * Connecting to port: 80
+21:11:23.627444 *   Trying 201.251.64.34:80...
+21:11:33.621812 * Connection timeout after 10000 ms
+21:11:33.624215 * Closing connection 0
+curl: (28) Connection timeout after 10000 ms
+Press any key to continue . . .
