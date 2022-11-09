@@ -14,6 +14,11 @@ Created by CincinMasukMangkok [GitHub](https://github.com/lepz0r)
 
 <a href="https://discord.gg/BnfRsHtGDg"><img src="https://discordapp.com/api/guilds/1004375176361803866/widget.png?style=banner3" alt="Discord Banner 3"/></a>
 
+Backup:
+
+<a href="https://discord.gg/pXyQFGZES8"><img src="https://discordapp.com/api/guilds/1004375176361803866/widget.png?style=banner3" alt="Discord Banner 3"/></a>
+
+
 --------------
 ### Unofficial Bebasid World Discord 
 Created by AronEquip [GitHub](https://github.com/RacBallonMC)
